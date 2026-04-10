@@ -1,0 +1,32 @@
+/* ===== THEME VARIABLES ===== */
+
+/* Default = DARK (Nike style) */
+:root {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+
+  --accent: #22c55e;        /* neon green */
+  --accent-alt: #38bdf8;    /* neon blue */
+
+  --card-bg: linear-gradient(135deg, #020617, #0f172a);
+}
+
+/* ===== GLOBAL ===== */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Center layout */
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+}

@@ -6,6 +6,8 @@ import { activityConfig, ACTIVITY_TYPES } from "../config/activityConfig";
 import { db } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
 
+import "./DailyProgress.css";
+
 function DailyProgress() {
   const navigate = useNavigate();
 
@@ -18,50 +20,7 @@ function DailyProgress() {
     dietDone: false,
   });
 
-  //   const activities = [
-  //     {
-  //       id: 1,
-  //       type: ACTIVITY_TYPES.WATER,
-  //       title: "drink water",
-  //       description: "keep hydrated",
-  //       display_icon: "💧",
-  //     },
-  //     {
-  //       id: 2,
-  //       type: ACTIVITY_TYPES.DIET,
-  //       title: "eat healthy",
-  //       description: "healthy body, healthy mind",
-  //       display_icon: "🍗",
-  //     },
-  //     {
-  //       id: 3,
-  //       type: ACTIVITY_TYPES.WORKOUT,
-  //       title: "workout",
-  //       description: "healthy body, healthy mind",
-  //       display_icon: "💪",
-  //     },
-  //     {
-  //       id: 4,
-  //       type: ACTIVITY_TYPES.SLEEP,
-  //       title: "sleep",
-  //       description: "need proper rest",
-  //       display_icon: "🌙",
-  //     },
-  //     {
-  //       id: 5,
-  //       type: ACTIVITY_TYPES.ALCOHOL,
-  //       title: "no alchol",
-  //       description: "no alchol yesterday",
-  //       display_icon: "🚫",
-  //     },
-  //     {
-  //       id: 6,
-  //       type: ACTIVITY_TYPES.STEPS,
-  //       title: "steps",
-  //       description: "step counter",
-  //       display_icon: "👟",
-  //     },
-  //   ];
+    
   useEffect(() => {
     async function fetchActivities() {
       try {

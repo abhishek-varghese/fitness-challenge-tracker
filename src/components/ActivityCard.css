@@ -1,0 +1,77 @@
+.activity-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 16px;
+  border-radius: 16px;
+
+  background: var(--card-bg);
+  color: var(--text-primary);
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+
+  transition: all 0.2s ease;
+}
+
+/* Hover glow */
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px var(--accent);
+}
+.activity-btn {
+  width: 56px;
+  height: 56px;
+
+  border-radius: 50%;
+  border: none;
+
+  font-size: 24px;
+
+  background: var(--accent);
+  color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+/* Neon glow */
+.activity-btn:hover {
+  box-shadow: 0 0 12px var(--accent);
+  transform: scale(1.1);
+}
+
+.activity-btn {
+  width: 56px;
+  height: 56px;
+
+  border-radius: 50%;
+  border: none;
+
+  font-size: 24px;
+
+  background: var(--accent);
+  color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+/* Neon glow */
+.activity-btn:hover {
+  box-shadow: 0 0 12px var(--accent);
+  transform: scale(1.1);
+}
+

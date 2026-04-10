@@ -1,0 +1,15 @@
+.daily-progress {
+  padding: 16px;
+}
+
+/* Title */
+.daily-progress h2 {
+  margin-bottom: 16px;
+}
+
+/* Stacked cards layout */
+.activity-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
