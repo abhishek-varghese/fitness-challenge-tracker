@@ -1,0 +1,117 @@
+.workout-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.2s ease;
+}
+
+.workout-card:hover {
+  box-shadow: 0 0 10px var(--accent);
+}
+
+.workout-card--done {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.workout-card--done:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Main row ── */
+.workout-card__row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.workout-card__icon {
+  font-size: 28px;
+  width: 36px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.workout-card__info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2px;
+}
+
+.workout-card__title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.workout-card__sub {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.workout-card__status {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--accent);
+  flex-shrink: 0;
+  min-width: 40px;
+  text-align: right;
+}
+
+/* ── Progress bar ── */
+.workout-card__bar {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 0 16px;
+}
+
+.workout-card__bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+/* ── Set buttons ── */
+.workout-card__sets {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px 14px;
+  flex-wrap: wrap;
+}
+
+.set-btn {
+  flex: 1;
+  min-width: 60px;
+  padding: 10px 8px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.set-btn:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+.set-btn--custom {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.set-btn--custom:hover {
+  background: var(--accent-alt);
+  color: #000;
+  border-color: transparent;
+}
