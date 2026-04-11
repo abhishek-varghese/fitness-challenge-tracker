@@ -182,3 +182,26 @@
     border-right-color: var(--border);
   }
 }
+
+/* Swipe dot indicator */
+.page-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 0 0;
+}
+
+.page-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.page-dot--active {
+  background: var(--accent);
+  width: 18px;
+  border-radius: 3px;
+}

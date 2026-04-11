@@ -120,7 +120,7 @@ function DailyProgress() {
 
   return (
     <div className="daily-progress">
-      <h2>Today</h2>
+      <h2>Daily Progress</h2>
       <div className="activity-grid">
         {activities.map((activity) => {
           const config = activityConfig[activity.type];
