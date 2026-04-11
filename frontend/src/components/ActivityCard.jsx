@@ -41,7 +41,6 @@ function ActivityCard({ activity, displayValue, isCompleted, onClick, onLongPres
       <span className="activity-icon">{activity.icon}</span>
 
       <div className="activity-info">
-        <span className="activity-title">{activity.title}</span>
         <span className="activity-desc">{activity.description}</span>
       </div>
 
